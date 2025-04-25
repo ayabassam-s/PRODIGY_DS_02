@@ -74,3 +74,93 @@ The overall survival rate among passengers in the training dataset was 38.79%, i
 
 ![image](https://github.com/user-attachments/assets/8f3b7ceb-4e14-42be-a3fb-7056be449cee)
 Figure 4.1: Overall survival distribution
+
+
+![image](https://github.com/user-attachments/assets/5935ef96-fc2f-43ca-bae6-e3d2b7493562)
+Figure 4.2: Survival rate by passenger class
+
+The analysis shows a clear pattern: 1st class passengers had the highest survival rate (64.12%), followed by 2nd class (48.97%), and 3rd class (24.11%). This suggests that social class played a significant role in survival chances.
+
+![image](https://github.com/user-attachments/assets/59f58b3a-d156-4106-b6db-00b0e02b71d1)
+Figure 4.3: Survival rate by gender
+
+The analysis reveals a dramatic difference in survival rates between genders: females had a 75.10% survival rate, while males had only a 17.63% survival rate. This reflects the "women and children first" protocol that was followed during the evacuation.
+
+
+![image](https://github.com/user-attachments/assets/45a2c2f9-27b4-4ec0-9182-fb8dfe2d36c4)
+Figure 4.4: Survival rate by age group
+
+The analysis shows that children had the highest survival rates, followed by teenagers and young adults. This is consistent with the "women and children first" maritime protocol.
+
+
+![image](https://github.com/user-attachments/assets/d930647d-0cb0-4f1a-baa4-b321250a0971)
+Figure 4.5: Correlation matrix of key variables
+
+
+**The correlation analysis reveals several significant relationships:**
+• Sex and Survival: 0.57 correlation, indicating females had much higher survival rates.  
+• Pclass and Survival: -0.35 correlation, showing that higher class passengers (lower Pclass values) had better survival rates.  
+• Age and Survival: -0.04 correlation, indicating a slight tendency for younger passengers to survive.  
+• Fare and Survival: 0.26 correlation, suggesting passengers who paid higher fares had better survival chances.  
+
+
+
+# 5. Variable Relationship Analysis
+
+In this section, we delve deeper into the relationships between different variables and survival, examining how these factors interacted to influence survival outcomes.
+
+![image](https://github.com/user-attachments/assets/71b1108f-4314-4f9a-87d4-110ae6627d1c)
+Figure 5.1: Survival rates by gender and class
+
+**The analysis reveals a striking interaction between gender and class:**
+**• Female 1st class passengers: 97.53% survival rate  
+• Female 2nd class passengers: 96.72% survival rate  
+• Female 3rd class passengers: 48.74% survival rate  
+• Male 1st class passengers: 33.71% survival rate  
+• Male 2nd class passengers: 14.29% survival rate  
+• Male 3rd class passengers: 13.45% survival rate** 
+
+This stark contrast highlights the combined effects of gender bias and class privilege during the disaster. Female first-class passengers had an almost guaranteed survival rate, while male third-class passengers had the lowest chances of survival.
+
+
+
+![image](https://github.com/user-attachments/assets/aad00e87-9e54-4dd3-a772-d259ba2acf63)
+Figure 5.2: Survival rate by family size
+
+**The analysis reveals an interesting non-linear relationship between family size and survival:
+• Passengers traveling alone: 31.55% survival rate  
+• Small families (2-4 members): 58.48% survival rate  
+• Large families (5+ members): 14.81% survival rate**
+
+Passengers traveling in small family groups had the highest survival rates, while those in large families had the lowest. This might be because small families could stay together during evacuation, while larger families may have been separated or faced more difficulties finding space in lifeboats.
+
+
+![image](https://github.com/user-attachments/assets/c627d2b5-1ea4-4d32-9e07-83fe5e057601)
+Figure 5.3: Relationship between age, fare, and survival
+
+The scatter plot shows the relationship between age, fare, and survival. We can observe that passengers who paid higher fares generally had better survival chances, regardless of age. However, there is a concentration of survivors among younger passengers and those who paid higher fares.
+
+# 6. Pattern and Trend Identification
+Based on our analysis, we can identify several key patterns and trends in the Titanic dataset that influenced passenger survival.
+
+
+![image](https://github.com/user-attachments/assets/d992b908-b357-4cd0-81ea-9942fe5ea4e6)
+Figure 6.1: Significance of identified patterns affecting survival
+
+
+**Feature Importance**
+To quantify the importance of different features in predicting survival, we can use a machine learning model like Random Forest. The feature importance scores indicate how much each feature contributes to the prediction of survival.
+
+![image](https://github.com/user-attachments/assets/50e2f8ef-ab23-4fcf-bae7-c1bd3a77123a)
+Figure 6.2: Feature importance for survival prediction
+
+The feature importance analysis confirms our findings from the exploratory analysis:
+1. Gender (Sex): The most important factor, accounting for about 28% of the predictive power.  
+2. Fare: The second most important factor, accounting for about 23% of the predictive power.  
+3. Age: The third most important factor, accounting for about 22% of the predictive power.  
+4. Passenger Class (Pclass): The fourth most important factor, accounting for about 8% of the predictive power.  
+5. Family Size: The fifth most important factor, accounting for about 5% of the predictive power.
+
+These results align with the patterns identified in our exploratory analysis, confirming that gender, fare, and age were the most significant factors in determining survival outcomes.
+
+
