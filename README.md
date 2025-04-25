@@ -170,7 +170,7 @@ In this section, we present a comprehensive dashboard of key findings from our a
 Figure 7.1: Dashboard of key findings from Titanic dataset analysis
 
 
-**The dashboard above provides a comprehensive view of our key findings:**
+**The dashboard above provides a comprehensive view of our key findings:**  
 **1. Feature Importance: Gender, fare, and age were the most important factors affecting survival.  
 2. Gender and Class: Female first-class passengers had the highest survival rate, while male third-class passengers had the lowest.  
 3. Age Groups: Children had higher survival rates than adults, with seniors having the lowest rates.  
