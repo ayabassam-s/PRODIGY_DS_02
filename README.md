@@ -163,4 +163,18 @@ The feature importance analysis confirms our findings from the exploratory analy
 
 These results align with the patterns identified in our exploratory analysis, confirming that gender, fare, and age were the most significant factors in determining survival outcomes.
 
+# 7. Key Findings and Visualizations
+In this section, we present a comprehensive dashboard of key findings from our analysis of the Titanic dataset.
+
+![image](https://github.com/user-attachments/assets/3981b763-00e5-46d8-95ac-4a0c480de3fb)
+Figure 7.1: Dashboard of key findings from Titanic dataset analysis
+
+
+**The dashboard above provides a comprehensive view of our key findings:**
+**1. Feature Importance: Gender, fare, and age were the most important factors affecting survival.  
+2. Gender and Class: Female first-class passengers had the highest survival rate, while male third-class passengers had the lowest.  
+3. Age Groups: Children had higher survival rates than adults, with seniors having the lowest rates.  
+4. Family Size: Passengers in small families had the highest survival rates, followed by those traveling alone, with large families having the lowest rates.  
+5. Overall Survival: Only about 39% of passengers survived the disaster.  
+6. Correlations: Strong correlations between survival and gender, class, and fare.**
 
